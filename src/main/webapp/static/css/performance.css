@@ -1,0 +1,78 @@
+body {
+	background-color: #EFEFEF;
+}
+
+.ericsson-grid {
+	background-color: #F8F8F8;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.ericsson-grid ul li a,.nav-pills>.active>a,.nav-pills>.active>a:hover {
+	text-align: left;
+	background-color: #5F676B;
+	margin-top: 0px;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+}
+
+.page-header {
+	border-bottom: 1px solid #999
+}
+
+/* comment this part, because it breaks the view in table management
+.label,.badge {
+	background-color: #5F676B;
+	font-size: 14px;
+}
+*/
+
+.nav-pills.nav-stacked>li:last-child>a {
+	font-size: 18px;
+}
+
+a {
+	color: #5D5D5D;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 14px;
+}
+/*
+h3 {
+	font-size: 20px;
+}
+
+h5{
+	color: #fff;
+	text-align: left;
+}
+
+*/
+.container-fluid .btn-group {
+    margin: 7px 5px 0 5px;
+}
+
+.imgs_report {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 15px;
+}
+
+
+/*New added */
+.panel{
+    box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+}
+
+.panel-body{
+	text-align: center;
+}
+
+
+
+
+
+
+
