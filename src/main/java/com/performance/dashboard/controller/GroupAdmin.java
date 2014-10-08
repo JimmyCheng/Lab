@@ -89,7 +89,7 @@ public class GroupAdmin {
 		
 		redirectAttributes.addFlashAttribute("message", message);
 		redirectAttributes.addFlashAttribute("warning", warning);
-		return "redirect:admin/group";
+		return "redirect:/admin/group";
 	}
 }
 

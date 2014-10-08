@@ -80,7 +80,7 @@
                                
                                <shiro:hasRole name="admin">
                                <td class="center">
-                                    <a class="btn btn-danger btn-xs" href="${ctx}/admin/platform/delete/${platform.id}">
+                                    <a class="btn btn-danger btn-xs" href="${ctx}/admin/platform/delete/${benchmark.id}">
                                         <i class="glyphicon glyphicon-trash icon-white"></i>Delete
                                     </a>
                                </td>

@@ -23,9 +23,8 @@ public class PerformanceAdmin {
 	public String getPerformance(Model model) {
 		List<Performance> performances = performanceService.getAllPerformances();
 		model.addAttribute("performances", performances);
-		return "admin/Performance";
+		return "admin/performance";
 	}
-
 
 	/**
 	 * Performance:Delete
@@ -37,7 +36,7 @@ public class PerformanceAdmin {
 	public String deletePerformance(@PathVariable("id") Long id, RedirectAttributes redirectAttributes) {
 		performanceService.deletePerformance(id);
 		redirectAttributes.addFlashAttribute("message", "Performance record is successfully deleted.");
-		return "redirect:admin/performance";
+		return "redirect: /admin/performance";
 	}
 }
 
