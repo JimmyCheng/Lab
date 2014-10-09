@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="Jimmy Cheng">
-<link rel="shortcut icon" href="${ctx}/static/img/favicon.ico" type="image/x-icon">nt="">
+<link rel="shortcut icon" href="${ctx}/static/img/favicon.ico" type="image/x-icon">
 
 <script src="${ctx}/static/jquery-validation/1.11.1/jquery.validate.min.js" type="text/javascript"></script>
 <script src="${ctx}/static/jquery-validation/1.11.1/messages_bs_zh.js" type="text/javascript"></script>
@@ -69,7 +69,7 @@
                       <td class="center">${performance.version.name}</td>
                       <td class="center">${performance.result}</td>
                       <td class="center">${performance.created}</td>
-                      <td class="center"><a href="${performance.jenkins}">Jenkins Page</a></td>
+                      <td class="center"><a href="#">Jenkins Page</a></td>
                       <shiro:hasRole name="admin">
                       <td class="center">
                            <a class="btn btn-danger btn-xs" href="${ctx}/admin/group/delete/${group.id}">
