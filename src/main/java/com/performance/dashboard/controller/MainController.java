@@ -21,7 +21,6 @@ import com.performance.dashboard.model.GeneralData;
 import com.performance.dashboard.service.SettingService;
 import com.performance.dashboard.service.PerformanceService;
 import com.performance.dashboard.service.PlatformService;
-import com.performance.dashboard.service.VersionService;
 
 @Controller
 @RequestMapping(value = "/")
@@ -32,9 +31,6 @@ public class MainController {
     
     @Autowired
     private PlatformService platformService; 
-    
-    @Autowired
-    private VersionService versionService;
     
     @Autowired
     private SettingService settingService;
