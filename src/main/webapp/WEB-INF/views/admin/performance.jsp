@@ -69,7 +69,7 @@
                       <td class="center">${performance.version.name}</td>
                       <td class="center">${performance.result}</td>
                       <td class="center">${performance.created}</td>
-                      <td class="center"><a href="#">Jenkins Page</a></td>
+                      <td class="center"><a href="${performance.jenkins}">Jenkins Page</a></td>
                       <shiro:hasRole name="admin">
                       <td class="center">
                            <a class="btn btn-danger btn-xs" href="${ctx}/admin/group/delete/${group.id}">

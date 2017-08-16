@@ -53,10 +53,10 @@
                                     <label for="inputStatus" class="col-sm-4 control-label">Status</label>
                                     <div class="col-sm-6">
                                         <select class="form-control input-sm" name="status">
-                                            <option <c:if test="${platform.status eq 'active'}">selected</c:if>>active</option>
-                                            <option <c:if test="${platform.status eq 'inactive'}">selected</c:if>>inactive</option>
-                                            <option <c:if test="${platform.status eq 'pending'}">selected</c:if>>pending</option>
-                                            <option <c:if test="${platform.status eq 'obsolete'}">selected</c:if>>obsolete</option>
+                                            <option ${platform.status eq 'active' ? 'selected':''}>active</option>
+                                            <option ${platform.status eq 'inactive' ? 'selected':''}>inactive</option>
+                                            <option ${platform.status eq 'pending' ? 'selected':''}>pending</option>
+                                            <option ${platform.status eq 'obsolete' ? 'selected':''}>obsolete</option>
                                         </select>
                                     </div>
                                 </div>

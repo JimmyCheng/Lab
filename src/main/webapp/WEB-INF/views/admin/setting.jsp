@@ -50,7 +50,7 @@
         					    <div class="controls col-sm-6">
                                   <select class="form-control input-sm" name="platform">
                                     <c:forEach items="${platforms}" var="platform">
-                                      <option <c:if test="${platform.name eq defaultPlatform.name}">selected </c:if>>${platform.name}</option>
+                                      <option ${platform.name eq defaultPlatform.name ? 'select':''}>${platform.name}</option>
                                     </c:forEach>
                                   </select>
         					    </div>
@@ -61,7 +61,7 @@
                                   <div class="controls col-sm-6">
                                     <select class="form-control input-sm" name="version">
                                       <c:forEach items="${versions}" var="version">
-                                        <option <c:if test="${version.name eq defaultVersion.name}">selected </c:if>>${version.name}</option>
+                                        <option ${version.name eq defaultVersion.name ? 'selected':''}>${version.name}</option>
                                       </c:forEach>
                                     </select>
                                   </div>  
@@ -72,7 +72,7 @@
                                   <div class="controls col-sm-6">
                                     <select class="form-control input-sm" name="theme">
                                       <c:forEach items="${themes}" var="theme">
-                                        <option <c:if test="${theme eq defaultTheme}">selected </c:if>>${theme}</option>
+                                        <option ${theme eq defaultTheme ? 'selected':''}>${theme}</option>
                                       </c:forEach>
                                     </select>
                                   </div>  

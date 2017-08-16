@@ -53,7 +53,7 @@
 					    <label for="inputgroup" class="col-sm-4 control-label">Description</label>
 					    <div class="controls col-sm-6">
                             <div class="textarea">
-                                <textarea type="text" class="form-control col-sm-6" name="description">${group.description}</textarea>
+                                <textarea class="form-control col-sm-6" name="description">${group.description}</textarea>
                             </div>
 					    </div>
 					  </div>

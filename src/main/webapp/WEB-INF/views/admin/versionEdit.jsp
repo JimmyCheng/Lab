@@ -53,10 +53,10 @@
                                     <label for="inputStatus" class="col-sm-4 control-label">Status</label>
                                     <div class="col-sm-6">
                                         <select class="form-control input-sm" name="status">
-                                            <option <c:if test="${version.status eq 'active'}">selected</c:if>>active</option>
-                                            <option <c:if test="${version.status eq 'inactive'}">selected</c:if>>inactive</option>
-                                            <option <c:if test="${version.status eq 'pending'}">selected</c:if>>pending</option>
-                                            <option <c:if test="${version.status eq 'obsolete'}">selected</c:if>>obsolete</option>
+                                            <option ${version.status eq 'active' ? 'selected':''}>active</option>
+                                            <option ${version.status eq 'inactive' ? 'selected':''}>inactive</option>
+                                            <option ${version.status eq 'pending' ? 'selected':''}>pending</option>
+                                            <option ${version.status eq 'obsolete' ? 'selected':''}>obsolete</option>
                                         </select>
                                     </div>
                                 </div>

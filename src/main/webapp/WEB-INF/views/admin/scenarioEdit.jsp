@@ -54,7 +54,7 @@
                   <div class="col-sm-6">
                     <select class="form-control input-sm" name="group">
                       <c:forEach items="${groups}" var="group">
-                        <option <c:if test="${group.name eq scenario.group.name}">selected </c:if>>${group.name}</option>
+                        <option ${group.name eq scenario.group.name :'selected':''}>${group.name}</option>
                       </c:forEach>
                     </select>
                   </div>
@@ -64,7 +64,7 @@
                   <label for="inputDescription" class="col-sm-4 control-label">Description</label>
                   <div class="controls col-sm-6">
                     <div class="textarea">
-                      <textarea type="text" class="form-control col-sm-6" name="description">${scenario.description}</textarea>
+                      <textarea class="form-control col-sm-6" name="description">${scenario.description}</textarea>
                     </div>
                   </div>
                 </div>

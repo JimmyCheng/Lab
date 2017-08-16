@@ -47,7 +47,7 @@
                         <div class="controls col-sm-6">
                           <select class="form-control input-sm" name="scenario">
                             <c:forEach items="${scenarios}" var="scenario">
-                              <option <c:if test="${scenario.name eq benchmark.scenario.name}">selected </c:if>>${scenario.name}</option>
+                              <option ${scenario.name eq benchmark.scenario.name ? 'selected':''}>${scenario.name}</option>
                             </c:forEach>
                           </select>
                         </div>  
@@ -58,7 +58,7 @@
 					    <div class="controls col-sm-6">
                           <select class="form-control input-sm" name="platform">
                             <c:forEach items="${platforms}" var="platform">
-                              <option <c:if test="${platform.name eq benchmark.platform.name}">selected </c:if>>${platform.name}</option>
+                              <option ${platform.name eq benchmark.platform.name ? 'selected':''}>${platform.name}</option>
                             </c:forEach>
                           </select>
 					    </div>
@@ -69,7 +69,7 @@
                           <div class="controls col-sm-6">
                             <select class="form-control input-sm" name="version">
                               <c:forEach items="${versions}" var="version">
-                                <option <c:if test="${version.name eq benchmark.version.name}">selected </c:if>>${version.name}</option>
+                                <option ${version.name eq benchmark.version.name ? 'selected':''}>${version.name}</option>
                               </c:forEach>
                             </select>
                           </div>  
