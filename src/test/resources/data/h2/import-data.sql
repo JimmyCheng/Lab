@@ -30,6 +30,9 @@ INSERT INTO `ss_version` (`id`, `name`,`status`) VALUES
 INSERT INTO `ss_default_version` (`id`, `version_id`) VALUES
 (1, 2);
 
+INSERT INTO `ss_default_theme` (`id`, `theme`) VALUES
+(1, 'bar');
+
 INSERT INTO `ss_scenario` (`id`, `name`, `description`, `group_id`) VALUES
 (1, 'CPU Scenario 1', 'CPU Scenario 1', 1),
 (2, 'CPU Scenario 2', 'CPU Scenario 2', 1),
