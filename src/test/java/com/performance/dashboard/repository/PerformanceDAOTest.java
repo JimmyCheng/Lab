@@ -21,7 +21,7 @@ public class PerformanceDAOTest extends SpringTransactionalTestCase {
     	List<Performance> results = (List<Performance>) performanceDAO.findAll();
         
         for(Performance perf: results){
-        	System.out.println(perf.toString());
+        	System.out.println("####:" + perf.toString());
         }
         System.out.println("++++++++++++++++++++++++++++++++End to find all++++++++++++++++++");
     }
@@ -35,7 +35,7 @@ public class PerformanceDAOTest extends SpringTransactionalTestCase {
         }
     	
     	for(Performance perf: performances){
-        	System.out.println(perf.toString());
+        	System.out.println("####:" + perf.toString());
         }
         System.out.println("++++++++++++++++++++++++++++++++End to find platform++++++++++++++++++");        
     }
@@ -49,7 +49,7 @@ public class PerformanceDAOTest extends SpringTransactionalTestCase {
         }        
     	
     	for(Performance perf: performances){
-        	System.out.println(perf.toString());
+        	System.out.println("####:" + perf.toString());
         }
         System.out.println("++++++++++++++++++++++++++++++++End to find platform & Scenario++++++++++++++++++");        
     }
@@ -62,7 +62,7 @@ public class PerformanceDAOTest extends SpringTransactionalTestCase {
         	System.out.println("****************Nothing is found!******************");
         }
     	for(Performance perf: performances){
-        	System.out.println(perf.toString());
+        	System.out.println("####:" + perf.toString());
         }
         System.out.println("++++++++++++++++++++++++++++++++End to find platform & Scenario & Version++++++++++++++++++");        
     }
@@ -76,7 +76,7 @@ public class PerformanceDAOTest extends SpringTransactionalTestCase {
         }
     	
     	for(Performance perf: performances){
-        	System.out.println(perf.toString());
+        	System.out.println("####:" + perf.toString());
         }
         System.out.println("++++++++++++++++++++++++++++++++End to find platform & Scenario & Version & Orderby++++++++++++++++++");        
     }

@@ -86,6 +86,10 @@ public class SettingService {
 		}		
 	}
 	
+	/**
+	 * Get the default version.
+	 * @return
+	 */
 	public Version getDefaultVersion(){
 		List<DefaultVersion> list = (List<DefaultVersion>)defaultVersionDAO.findAll();
 		if(list.size() != 1){
@@ -96,6 +100,10 @@ public class SettingService {
 		}
 	}
 	
+	/**
+	 * Get the default platform
+	 * @return
+	 */
 	public Platform getDefaultPlatform(){
 		List<DefaultPlatform> list = (List<DefaultPlatform>)defaultPlatformDAO.findAll();
 		if(list.size() != 1){
