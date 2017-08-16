@@ -60,7 +60,6 @@ public class MainController {
         return "main";
     }
     
-    //TODO; user might input www.perflab.org/test or anything, that will cause error.
     @RequestMapping(value ="{platform}", method = RequestMethod.GET)
     public String firstPageWithParm(@PathVariable("platform") String platform, Model model) {
         Version selectVersion = settingService.getDefaultVersion();
