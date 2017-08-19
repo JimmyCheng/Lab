@@ -4,7 +4,7 @@
                 <br>
                 <div class="col-sm-6 col-lg-6">
                     <h4>
-                     <a href="${ctx}/"><img src="${ctx}/static/img/logo.png"></a>
+                     <a href="${ctx}/"><img src="${ctx}/static/img/logo_lab.png"></a>
                     </h4>
                     <p>Performance lab is integrated with <a href="#">Jenkins</a>. It provides performance result management and monitoring. Accelerate your performance testing.</p>
                 </div>

@@ -8,7 +8,7 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>        
-            <a class="nav-brand" href="${ctx}/"><img alt="CodeRadar" src="${ctx}/static/img/logo.png"></a>
+            <a class="nav-brand" href="${ctx}/"><img alt="CodeRadar" src="${ctx}/static/img/logo_lab.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

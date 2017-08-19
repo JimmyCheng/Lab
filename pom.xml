@@ -504,7 +504,7 @@
                 </executions>
             </plugin>
 
-            <!-- jetty插件, 设定context path与spring profile -->
+            <!-- jetty插件, 设定context path与spring profile
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
@@ -522,7 +522,24 @@
                         <contextPath>/${project.artifactId}</contextPath>
                     </webAppConfig>
                 </configuration>
-            </plugin>
+            </plugin> -->
+            
+            <plugin>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>maven-jetty-plugin</artifactId>
+					<version>6.1.26</version>
+					<configuration>
+						<contextPath>/</contextPath>
+						<scanIntervalSeconds>10</scanIntervalSeconds>
+						<classesDirectory>${basedir}/target/classes</classesDirectory>
+						<connectors>
+							<connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+								<port>80</port>
+								<maxIdleTime>60000</maxIdleTime>
+							</connector>
+						</connectors>
+					</configuration>
+				</plugin>
 
             <!-- resource插件 -->
             <plugin>
