@@ -2,20 +2,23 @@ package com.performance.dashboard.service;
 
 import org.junit.Ignore;
 import org.junit.Test;
-
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import org.springside.modules.test.spring.SpringTransactionalTestCase;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.performance.dashboard.entity.Platform;
 import com.performance.dashboard.entity.Version;
 import com.performance.dashboard.service.SettingService;
+import com.performance.dashboard.test.Profiles;
 
 import org.junit.Assert;
+
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext.xml" })
-@ActiveProfiles("test")
-public class SettingServiceTest extends SpringTransactionalTestCase {
+@ActiveProfiles(Profiles.UNIT_TEST)
+public class SettingServiceTest {
     @Autowired
     private SettingService settingService;
 

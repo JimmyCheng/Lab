@@ -2,15 +2,25 @@ package com.performance.dashboard.repository;
 
 import java.util.List;
 
+import javax.sql.DataSource;
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import org.springside.modules.test.spring.SpringTransactionalTestCase;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.performance.dashboard.test.Profiles;
 
 import com.performance.dashboard.entity.DefaultPlatform;
 
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext.xml" })
-public class DefaultPlatformDAOTest extends SpringTransactionalTestCase {
+@ActiveProfiles(Profiles.UNIT_TEST)
+public class DefaultPlatformDAOTest {
+	@Autowired
+	protected DataSource dataSource;
 
     @Autowired
     private DefaultPlatformDAO defaultPlatformDAO;

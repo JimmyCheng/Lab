@@ -8,15 +8,19 @@ import javax.persistence.metamodel.EntityType;
 import javax.persistence.metamodel.Metamodel;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import org.springside.modules.test.spring.SpringTransactionalTestCase;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.performance.dashboard.test.Profiles;
+
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext.xml" })
-@ActiveProfiles("test")
-public class JpaMappingTest extends SpringTransactionalTestCase {
+@ActiveProfiles(Profiles.UNIT_TEST)
+public class JpaMappingTest  {
 
 	private static Logger logger = LoggerFactory.getLogger(JpaMappingTest.class);
 

@@ -1,21 +1,25 @@
 package com.performance.dashboard.repository;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import org.springside.modules.test.spring.SpringTransactionalTestCase;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.performance.dashboard.entity.Group;
 import com.performance.dashboard.entity.Scenario;
+import com.performance.dashboard.test.Profiles;
 
+@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "/applicationContext.xml" })
-@ActiveProfiles("test")
-public class ScenarioDAOTest extends SpringTransactionalTestCase {
+@ActiveProfiles(Profiles.UNIT_TEST)
+public class ScenarioDAOTest  {
 
     @Autowired
     private ScenarioDAO scenarioDAO;
@@ -23,7 +27,7 @@ public class ScenarioDAOTest extends SpringTransactionalTestCase {
     @Test
     public void testFindAllTasks() throws Exception {
         List<Scenario> scenarios = (List<Scenario>) scenarioDAO.findAll();
-        assertEquals(24, scenarios.size());
+        assertTrue(scenarios.size() > 0);
     }
 
     @Test

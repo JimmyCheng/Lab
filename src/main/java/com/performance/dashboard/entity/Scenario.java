@@ -1,5 +1,6 @@
 package com.performance.dashboard.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -28,7 +29,7 @@ public class Scenario extends IdEntity {
         this.description = description;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "group_id")
     public Group getGroup() {
         return group;

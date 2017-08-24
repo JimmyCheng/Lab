@@ -9,13 +9,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-import org.springside.modules.security.utils.Digests;
-import org.springside.modules.utils.Clock;
-import org.springside.modules.utils.Encodes;
 
 import com.performance.dashboard.entity.User;
 import com.performance.dashboard.repository.UserDAO;
+import com.performance.dashboard.security.utils.Digests;
 import com.performance.dashboard.service.ShiroDbRealm.ShiroUser;
+import com.performance.dashboard.utilities.Clock;
+import com.performance.dashboard.utilities.Encodes;
 
 /**
  * 用户管理类.

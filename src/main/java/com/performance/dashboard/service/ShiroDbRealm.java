@@ -33,10 +33,10 @@ import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
-import org.springside.modules.utils.Encodes;
 
 import com.google.common.base.Objects;
 import com.performance.dashboard.entity.User;
+import com.performance.dashboard.utilities.Encodes;
 
 public class ShiroDbRealm extends AuthorizingRealm {
 
